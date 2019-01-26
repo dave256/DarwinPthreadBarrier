@@ -46,8 +46,9 @@ extern "C" {
 # define PTHREAD_PROCESS_SHARED		(43)
 #endif
 
-typedef struct {
-} pthread_barrierattr_t;
+    typedef struct {
+        char unused;
+    } pthread_barrierattr_t;
 
 typedef struct {
 	pthread_mutex_t mutex;
